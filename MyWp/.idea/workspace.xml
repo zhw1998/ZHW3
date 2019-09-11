@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MyWp" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="344438cb-a6e2-405a-912c-d02b82bdce49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Chat/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven_demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WAChat/src/main/java/com/wachat/filter/SimpleCORSFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/dao/MessageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/dao/MessageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/entity/message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/entity/message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/servlet/getAllMessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/servlet/getAllMessageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/utils/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/src/main/java/com/zhw/utils/DBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/src/main/webapp/chatindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/src/main/webapp/chatindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/src/main/webapp/chatindex.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/Char.war" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/Char.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/dao/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/dao/MessageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/entity/message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/entity/message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/servlet/getAllMessageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/Char/WEB-INF/classes/com/zhw/servlet/getAllMessageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/Char/chatindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/Char/chatindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/Char/chatindex.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/dao/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/dao/MessageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/entity/message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/entity/message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/servlet/getAllMessageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat/target/classes/com/zhw/servlet/getAllMessageServlet.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/controller/FileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1478">
+              <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#isUploaded#0;class#FileController#0" />
+                <element signature="docComment;method#newFolder#0;class#FileController#0" />
+                <element signature="method#newFolder#0;class#FileController#0" />
+                <element signature="docComment;method#getFilesBypath#0;class#FileController#0" />
+                <element signature="method#getFilesBypath#0;class#FileController#0" />
+                <element signature="docComment;method#getfolds#0;class#FileController#0" />
+                <element signature="method#getfolds#0;class#FileController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="81" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/utils/FileUploadConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="FxmlFile" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/zhw/po/Cutfiles.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/utils/GetCodeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logo4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/utils/ResultBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/user.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/test.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/wangpan.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/userfiles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/wangpan.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/wangpan.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/SendCodeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/Userfiles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/Userthird.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/CutFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/Cutfiles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/listen/MyMultipartResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/GetFilController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/utils/typeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/utils/TypeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/service/FileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/service/imple/FileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/dao/FileDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/service/imple/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/po/SharaFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/GetFileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShareFileMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/service/ShareFileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/service/imple/ShareFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/dao/ShareFileDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/dealFileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/utils/EmailCodeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/listen/UploadListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhw/utils/FileUploadConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="MyWp/invalid/Web" />
+    </ignored-facets>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="F:\maven\apache-maven-3.0.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="80" />
+    <option name="y" value="51" />
+    <option name="width" value="1750" />
+    <option name="height" value="938" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyWp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyWp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowMessages.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="G:/Program Files (x86)/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15009746" />
+    <property name="project.structure.side.proportion" value="0.32568806" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ideaproject\MyWp\src\main\resources\mapper" />
+      <recent name="G:\ideaproject\MyWp\src\main\java\com\zhw\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\ideaproject\MyWp\src\main\webapp\WEB-INF\pages" />
+      <recent name="G:\ideaproject\MyWp\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.35">
+    <configuration name="EmailCodeUtil" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhw.utils.EmailCodeUtil" />
+      <module name="MyWp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhw.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhw.utils.GetCodeUtil" />
+      <module name="MyWp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhw.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhw.controller.UserController" />
+      <module name="MyWp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhw.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhw.test" />
+      <module name="MyWp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhw.controller.test" />
+      <module name="MyWp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhw.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.0.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.35" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost/MyWp" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="MyWp">
+          <settings>
+            <option name="CONTEXT_PATH" value="/MyWp" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_MyWp" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57229" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MyWp" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EmailCodeUtil" />
+      <item itemvalue="Application.GetCodeUtil" />
+      <item itemvalue="Application.UserController" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.test (1)" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.35" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test (1)" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.UserController" />
+        <item itemvalue="Application.GetCodeUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="344438cb-a6e2-405a-912c-d02b82bdce49" name="Default Changelist" comment="" />
+      <created>1567148583563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567148583563</updated>
+      <workItem from="1567148584878" duration="57389000" />
+      <workItem from="1567504593280" duration="4790000" />
+      <workItem from="1567510443245" duration="12092000" />
+      <workItem from="1567563716981" duration="83184000" />
+      <workItem from="1567821411795" duration="90021000" />
+      <workItem from="1568120643406" duration="1447000" />
+      <workItem from="1568124802121" duration="879000" />
+      <workItem from="1568126045485" duration="66000" />
+      <workItem from="1568126390976" duration="1084000" />
+      <workItem from="1568128648641" duration="16537000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="267489000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18967828" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.1713881" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49850968" visible="true" weight="0.10623229" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Application Servers" order="6" sideWeight="0.49925485" weight="0.21104816" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3045326" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014903" side_tool="true" weight="0.48058254" />
+      <window_info anchor="bottom" id="Messages" order="11" type="SLIDING" weight="0.06798867" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="15" sideWeight="0.49701938" weight="0.23512748" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="1709" column="6" lean-forward="true" selection-start-line="1709" selection-start-column="6" selection-end-line="1709" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.0.RELEASE/spring-web-5.1.0.RELEASE.jar!/org/springframework/web/bind/annotation/RestController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/po/Userthird.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/po/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1388#1389#0" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.apache.commons.fileupload.ProgressListener">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.apache.commons.fileupload.ProgressListener</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar!/org/apache/commons/fileupload/ProgressListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.0.RELEASE/spring-web-5.1.0.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsMultipartResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/javaws.jar!/com/sun/javaws/progress/Progress.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.0.RELEASE/spring-web-5.1.0.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsFileUploadSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="203" column="37" selection-start-line="203" selection-start-column="37" selection-end-line="203" selection-end-column="37" />
+          <folding>
+            <element signature="e#8466#8467#0" expanded="true" />
+            <element signature="e#8521#8522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="359" column="71" lean-forward="true" selection-start-line="359" selection-start-column="71" selection-end-line="359" selection-end-column="71" />
+          <folding>
+            <element signature="e#12993#13704#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.3.3/commons-fileupload-1.3.3.jar!/org/apache/commons/fileupload/FileItem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/po/CutFile.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/po/Cutfiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/listen/MyMultipartResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/utils/GetCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/utils/TypeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="17" column="87" lean-forward="true" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.16/mysql-connector-java-5.1.16.jar!/com/mysql/jdbc/Util.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="231" column="46" selection-start-line="231" selection-start-column="46" selection-end-line="231" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/service/imple/FileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1394#1395#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2189#2190#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/service/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/javax/xml/crypto/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletRequestWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="92" column="51" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
+          <folding>
+            <element signature="e#2580#2581#0" expanded="true" />
+            <element signature="e#2648#2649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/dao/FileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/po/Userfiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+          <folding>
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/po/ShareFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShareFileMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loginchat#0;class#IndexController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/service/imple/ShareFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/service/ShareFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/dao/ShareFileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/controller/dealFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="165" column="21" lean-forward="true" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getFileByTpye#0;class#dealFileController#0" />
+            <element signature="method#getFileLike#0;class#dealFileController#0" />
+            <element signature="method#shareFile#0;class#dealFileController#0" />
+            <element signature="method#getOverTime#0;class#dealFileController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/utils/EmailCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getMessage#0;class#EmailCodeUtil#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/controller/SendCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/service/imple/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#register#0;class#UserController#0" />
+            <element signature="method#register#0;class#UserController#0" />
+            <element signature="docComment;method#isRegisted#0;class#UserController#0" />
+            <element signature="method#isRegisted#0;class#UserController#0" />
+            <element signature="docComment;method#login#0;class#UserController#0" />
+            <element signature="docComment;method#logout#0;class#UserController#0" />
+            <element signature="method#logout#0;class#UserController#0" />
+            <element signature="docComment;method#check#0;class#UserController#0" />
+            <element signature="method#check#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/listen/UploadListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/utils/FileUploadConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhw/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1478">
+          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#isUploaded#0;class#FileController#0" />
+            <element signature="docComment;method#newFolder#0;class#FileController#0" />
+            <element signature="method#newFolder#0;class#FileController#0" />
+            <element signature="docComment;method#getFilesBypath#0;class#FileController#0" />
+            <element signature="method#getFilesBypath#0;class#FileController#0" />
+            <element signature="docComment;method#getfolds#0;class#FileController#0" />
+            <element signature="method#getfolds#0;class#FileController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="81" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>MyWp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32568806" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32568806" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32568806" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MyWp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32568806" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:fastjson:1.2.47</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32568806" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhw.dao.UserDao" >
+
+    <insert id="insertUser" parameterType="com.zhw.po.User" useGeneratedKeys="true" keyProperty="id">
+        insert into users(username,password,register_time,uuid,mail) value (#{username},#{password},now(),#{uuid},#{mail})
+    </insert>
+
+    <update id="updataPassword">
+        update users set password = #{password} where mail = #{usermail}
+    </update>
+
+    <select id="isRegisted" resultType="com.zhw.po.User">
+        select * from users
+        <where>
+            <if test="type=='username'">
+                username = #{value}
+            </if>
+            <if test="type=='mail'">
+                mail = #{value}
+            </if>
+        </where>
+    </select>
+</mapper>

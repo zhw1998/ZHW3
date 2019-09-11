@@ -1,0 +1,48 @@
+*{margin: 0; padding: 0;}
+		/* 文件图标 */
+		.icon {
+		  width: 70px;
+		  height: 70px;
+		  vertical-align: -0.15em;
+		  fill: currentColor;
+		  overflow: hidden;
+		}
+		 .navdiv{margin:10px;}
+		 .navbar-nav{float: right;}
+		 .nav2 li{line-height: 50px;}
+		 .navbar-nav img{width: 40px; height: 40px;}
+		 .navbut ul li{float: left;}
+		 /* 用户下拉菜单 */
+		 .dropdown-menu{min-width: 80px; right: 0;}
+		 /* 中间文件显示框 */
+		 #contain{border: 1px solid black; height: 600px; padding: 0;}
+		 #contain .panel-body{overflow-y: auto; padding-bottom: 5px; height: 470px;}
+		 #contain .panel-heading{}
+		 /* 操作 */
+		 .fileoperate{min-height: 40px;}
+		 .fileoperate .dropdown-menu{width: 110px;}
+		 /* 导航 */
+		 .breadcrumb{background-color: transparent;margin-bottom: 0;}
+		 .breadcrumb > li + li:before {
+			color: #CCCCCC;
+			content: "/ ";
+			padding: 0 5px;
+		 }
+		 /* 隐藏 */
+		 .hidden{display: hidden;}
+		 /* 选择 */
+		 .filechoose{margin: 0 15px;}
+		 /* 文件模块 */
+		 .fileitemtemple{display: none;}
+		 .fileitem{float: left; height: 120px; width: 120px; margin:8px; padding: 5px; border-radius: 5px;text-align: center; position: relative;}
+		 .fileitem .filename{width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 5px; }
+		 .fileitem use{cursor: pointer;}
+		  
+		 /* 文件操作 */
+		 .fileitem .filectl{width: 100%; height: 100%;z-index: 999; background: darkgray;position: absolute;top:100px; left:0;display: none;flex-direction: column;}
+		 .fileitem .filectl button{width: 100%;flex: 1;}
+		 
+		 /* 任务显示栏 */
+		 #uploadwodkModel .modal-body{max-height: 500px; overflow-y: auto;}
+		 /* 文件分享 */
+		 #shareFileModel .filename{font-size: 17px; color: green;}

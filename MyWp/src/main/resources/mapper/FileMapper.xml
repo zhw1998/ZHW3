@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhw.dao.FileDao" >
+
+
+    <select id="findCutfilesByMd5" resultType="com.zhw.po.Cutfiles">
+        select id from cut_files where file_md5 = #{md5}
+    </select>
+
+    <select id="findUserFilesBySign" resultType="java.lang.Integer">
+        select id from user_files where user_id = #{userid} and file_sign = #{fileSign}
+    </select>
+
+    <select id="getFiles" resultType="com.zhw.po.Userfiles">
+        select * from user_files where  state!=0 and file_sign !='' and file_path = #{currentpath} and user_id = #{uid}
+    </select>
+
+    <select id="getFolders" resultType="java.lang.String">
+       select DISTINCT file_path from user_files where state!=0 and user_id = #{uid}   and  file_path != #{currentpath} and file_path LIKE  CONCAT(#{currentpath},'%')
+    </select>
+
+    <select id="findUserFileById" resultType="com.zhw.po.Userfiles">
+        select * from user_files where id = #{fid}
+    </select>
+
+    <select id="findCutFPathByfid" resultType="java.lang.String">
+       SELECT file_path,id,ordernum from cut_files,user_cut_files where user_fid= #{fid} and id=cut_fid ORDER BY ordernum
+    </select>
+
+    <select id="getFilesByType" resultType="com.zhw.po.Userfiles">
+        SELECT * from user_files where user_id = #{uid} and file_name regexp
+        <foreach item="item" index="index" collection="types"
+                 open="'[" separator="|" close="]$'">${item}</foreach>
+    </select>
+    <select id="getFilesLike" resultType="com.zhw.po.Userfiles">
+        select * from user_files where user_id = #{uid} and file_name like CONCAT('%',#{like},'%')
+    </select>
+
+    <insert id="insertUserFiles" keyProperty="id" useGeneratedKeys="true" parameterType="com.zhw.po.Userfiles">
+        insert into user_files(user_id,file_name,file_sign,file_path,file_size) value (#{userId},#{fileName},#{fileSign},#{filePath},#{fileSize})
+    </insert>
+    <insert id="insertUserCutFiles">
+        insert into user_cut_files(cut_fid,user_fid,ordernum) value (#{cid},#{fid},#{ordernum})
+    </insert>
+
+    <insert id="insertCutFiles" keyProperty="id" useGeneratedKeys="true" parameterType="com.zhw.po.Cutfiles">
+        insert into cut_files (file_md5,file_path,cut_size) value (#{fileMd5},#{filePath},#{cutSize})
+    </insert>
+
+
+    <update id="updateUserFileState">
+        update user_files set state = #{state} where user_id = #{uid} and id = #{fid}
+    </update>
+    <update id="updateUserFolderState">
+        update user_files set state = #{state} where user_id = #{uid} and file_path LIKE  CONCAT(#{foldname},'%')
+    </update>
+
+</mapper>

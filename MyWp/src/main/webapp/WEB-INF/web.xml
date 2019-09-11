@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+
+  <!--过滤器配置-->
+  <filter>
+    <filter-name>encodingfilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <async-supported>true</async-supported>  <!--设置是否支持启用异步支持-->
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingfilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+<!--用户是否登录过滤器-->
+<filter>
+  <filter-name>loginfilter</filter-name>
+  <filter-class>com.zhw.filter.LoginFilter</filter-class>
+  <init-param>
+    <param-name>allowedurl</param-name>
+    <param-value>
+      /user;
+      /code;
+    </param-value>
+  </init-param>
+</filter>
+  <filter-mapping>
+    <filter-name>loginfilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+<!--  监听器配置-->
+  <!--spring监听器  加载配置文件-->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+  <!-- 防止Spring内存溢出监听器  -->
+  <listener>
+    <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+  </listener>
+<!--  文件上传监听器-->
+  <listener>
+    <listener-class>com.zhw.listen.UploadListener</listener-class>
+  </listener>
+  
+<!--servlet配置-->
+  <servlet>
+    <servlet-name>SpringMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class><!--这里配置了前端控制器-->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring-mvc.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+    <async-supported>true</async-supported>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+<!--  会话超时配置（单位为分钟）-->
+  <session-config>
+    <session-timeout>120</session-timeout>
+  </session-config>
+
+<!--  欢迎页配置-->
+  <welcome-file-list>
+    <welcome-file>/index.jsp</welcome-file>
+    <welcome-file>/index.html</welcome-file>
+  </welcome-file-list>
+
+<!--  错误页面配置-->
+<!--  <error-page>    &lt;!&ndash;将错误代码(Error Code)或异常(Exception)的种类对应到web应用资源路径.&ndash;&gt;-->
+<!--    <error-code>404</error-code>        &lt;!&ndash;HTTP Error code,例如: 404、403&ndash;&gt;-->
+<!--    <location>error.html</location>            &lt;!&ndash;用来设置发生错误或异常时要显示的页面&ndash;&gt;-->
+<!--  </error-page>-->
+<!--  <error-page>-->
+<!--    <exception-type>java.lang.Exception</exception-type>&lt;!&ndash;设置可能会发生的java异常类型,例如:java.lang.Exception&ndash;&gt;-->
+<!--    <location>ExceptionError.html</location>            &lt;!&ndash;用来设置发生错误或异常时要显示的页面&ndash;&gt;-->
+<!--  </error-page>-->
+
+
+</web-app>

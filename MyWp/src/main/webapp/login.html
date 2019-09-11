@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+	<html xmlns:wb="http://open.weibo.com/wb">
+	<head>
+		<meta charset="utf-8">
+		<title>小胖网盘</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=appkey&debug=true" type="text/javascript" charset="utf-8"></script>
+	
+	</head>
+	<style>
+		*{padding: 0; margin: 0;}
+		@font-face {
+		  font-family: 'iconfont';
+		  src: url('icon/iconfont.eot');
+		  src: url('icon/iconfont.eot?#iefix') format('embedded-opentype'),
+			  url('icon/iconfont.woff2') format('woff2'),
+			  url('icon/iconfont.woff') format('woff'),
+			  url('icon/iconfont.ttf') format('truetype'),
+			  url('icon/iconfont.svg#iconfont') format('svg');
+		}
+		.iconfont {
+		  font-family: "iconfont" !important;
+		  font-size: 16px;
+		  font-style: normal;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+		a{text-decoration: none;}
+		a:hover{text-decoration: none;}
+		/* 滚动模块 */
+		#scrollerbox{z-index: 1;}
+		#myCarousel .item{width: 100%; height:700px; min-width: 1102px;}
+		#myCarousel .item img{width: 100%; height: 100%;}
+		/* 登录模块 */
+		#loginbox{z-index: 2; width: 350px; overflow: hidden; height: 400px; background: white; border-radius: 5px; position: absolute;right: 250px; top: 150px;}
+		#logincontain{width: 100%; height: 300px;}
+		#logincontain form{width: 280px; height: 100%; margin: auto;}
+		#loginthird{width: 100%; height: 60px; background: #f3f8ff;position: absolute;bottom: 0;line-height: 60px; text-align: right;padding-right: 10px;}
+		#loginthird ul{list-style: none; width: 270px; height: 50px; float: left;overflow: hidden;margin-left: 10px;}
+		#loginthird ul li{float: left;padding-right: 20px;}
+		#loginthird ul li span{font-size: 25px;}
+		/* 注册模块 */
+		.mesg{height: 30px; line-height: 30px;}
+		.mesg label{font-size: 13px; opacity: .4;color: red;}
+		.mesg span{color: green; font-size: 25px; }
+	</style>
+	<body ng-app="myapp" ng-init="codebut='获取验证码'">
+		<!-- 顶部模块logo等其他链接 -->
+		<div class="topbox">
+			
+		</div>
+		<!-- 登录模块 -->
+		<div id="loginbox">
+			<div id="logincontain">
+				<form class="form-horizontal" role="form" onsubmit="return login()">
+					  <div class="form-group">
+						  <br /><br />
+						  <h4>账号密码登录</h4>
+					  </div>
+					  <div class="form-group">
+						  <input type="text" class="form-control" id="code" placeholder="手机/邮箱/用户名">
+					  </div>
+					  <div class="form-group">
+						  <input type="password" class="form-control" id="password" placeholder="密码">
+					  </div>
+					  <div class="form-group">
+						  <div class="checkbox">
+							<label>
+							  <a href="javascript:void(0)"  data-toggle="modal" data-target="#updatePasswordModel">忘记密码</a>
+							</label>
+						  </div>
+					  </div>
+					  <div class="form-group">
+						  <button type="submit" class="btn btn-primary btn-lg btn-block">登录</button>
+					  </div>
+				</form>
+			</div>
+			<div id="loginthird">
+				<ul class="thirdli">
+					<li><div id="wb_connect_btn"><span class="iconfont">&#xe618;</span></div></li>
+					<li><a href=""><span class="iconfont">&#xe612;</span></a></li>
+					<li><a href=""><span class="iconfont">&#xe7e5;</span></a></li>
+				</ul>
+				<a href="#" data-toggle="modal" data-target="#registerbox">立即注册</a>
+			</div>
+		</div>
+		<!-- 首页登录页面的轮播图模块 -->
+		<div id="scrollerbox">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/bg1.jpeg"/>
+					</div>
+					<div class="item">
+						<img src="img/bg1.jpeg"/>
+					</div>
+					<div class="item">
+						 <img src="img/bg1.jpeg"/>
+					</div>
+				</div>
+				 
+			</div>
+		</div>
+		
+		<!-- 忘记密码 -->
+		<div class="modal fade " id="updatePasswordModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content  col-sm-10">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">忘记密码</h4>
+					</div>
+					<div class="modal-body" ng-controller="updatepasswordctl" >
+						<form class="form-horizontal"  onsubmit="return updatepsw()">
+							  <div class="form-group">
+								  <label for="firstname" class="col-sm-2 control-label">邮箱</label>
+								  <div class="col-sm-7">
+									<input type="text" class="form-control" id="updatemail" ng-model='updatemail'>
+								  </div>
+								   <div class="col-sm-3 mesg"> <label>{{m1}}</label><span ng-hide="o1" class="glyphicon glyphicon-ok"></span></div>
+							  </div>
+							  <div class="form-group">
+								  <label for="firstname" class="col-sm-2 control-label">新密码</label>
+								  <div class="col-sm-7">
+									<input type="password" class="form-control" id="updatepassword" ng-model='updatepassword' placeholder="请设置新密码">
+								  </div>
+								  <div class="col-sm-3 mesg"> <label>{{m2}}</label><span ng-hide="o2" class="glyphicon glyphicon-ok"></span> </div>
+							  </div>
+							   <div class="form-group">
+								    <label for="firstname" class="col-sm-2 control-label">验证码</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="updatecode" placeholder="请输入验证码">
+									 </div>
+									 <div class="col-sm-3">
+									 	<button type="button" ng-click="sendmail()" class="btn btn-info" id="updatacodebut">{{codebut}}</button>
+									 </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-9">
+									<button type="submit" id="updatapassword" class="btn btn-primary  btn-block">修改</button>
+								  </div>
+							  </div>
+						</form>
+					</div>
+				</div> 
+			</div> 
+		</div>
+		<!-- 注册模块 -->
+		<div id="registerbox"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			 <div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">用户注册</h4>
+					</div>
+					<div class="modal-body"  ng-controller="registformctl" >
+						<form class="form-horizontal"  onsubmit="return register()">
+							  <div class="form-group">
+								  <label for="firstname" class="col-sm-2 control-label">用户名</label>
+								  <div class="col-sm-7">
+									<input type="text" class="form-control" id="registerusername" ng-model='registerusername' placeholder="请输入用户名">
+								  </div>
+								  <div class="col-sm-3 mesg"> <label>{{mesg1}}</label><span ng-hide="ok1" class="glyphicon glyphicon-ok"></span></div>
+							  </div>
+							  <div class="form-group">
+								  <label for="firstname" class="col-sm-2 control-label">邮箱</label>
+								  <div class="col-sm-7">
+									<input type="text" class="form-control" id="registermail" ng-model='registermail' placeholder="可用于登录和找回密码">
+								  </div>
+								   <div class="col-sm-3 mesg"> <label>{{mesg2}}</label><span ng-hide="ok2" class="glyphicon glyphicon-ok"></span> </div>
+							  </div>
+							  <div class="form-group">
+								  <label for="firstname" class="col-sm-2 control-label">密码</label>
+								  <div class="col-sm-7">
+									<input type="password" class="form-control" id="registerpassword" ng-model='registerpassword' placeholder="请设置登录密码">
+								  </div>
+								  <div class="col-sm-3 mesg"> <label>{{mesg3}}</label><span ng-hide="ok3" class="glyphicon glyphicon-ok"></span> </div>
+							  </div>
+							   <div class="form-group">
+								    <label for="firstname" class="col-sm-2 control-label">验证码</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="registercode" placeholder="请输入验证码">
+									 </div>
+									 <div class="col-sm-3">
+									 	<button type="button"  ng-click="sendmail()" class="btn btn-info" id="codebut">{{codebut}}</button>
+									 </div>
+							  </div>
+							  <div class="form-group">
+								  <div class="col-sm-9">
+									<button type="submit" id="registerbut" class="btn btn-primary  btn-block">注册</button>
+								  </div>
+							  </div>
+						</form>
+					</div>
+				</div> 
+			</div> 
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<script>
+			//angular 
+			 var app = angular.module('myapp', []);
+			 app.controller('registformctl', function($scope) {
+				$scope.ok1 = true;$scope.ok2 = true;$scope.ok3 = true;
+				 
+				var wacth = $scope.$watch('registerusername',function(newValue){
+					if(!newValue) return ; //验证用户名
+					if(newValue.length>=3&&newValue.length<=10){
+						//验证是否已存在该用户  需要用同步请求
+						$.ajax({
+							url:'user/check.action',
+							async:false,
+							type:'get',
+							data:{value:newValue,type:'username'},
+							success:function(res){
+							if(res.code == 200){
+								$scope.ok1 = false;
+								$scope.mesg1 = "";
+							}else{
+								$scope.ok1 = true;
+								$scope.mesg1 = "已被注册";
+							}
+						}
+						});
+					}else{
+						$scope.ok1 = true;
+						$scope.mesg1 = "长度3~10个字符";
+					}
+				});
+				var wacth = $scope.$watch('registermail',function(newValue){
+					if(!newValue) return ; //验证邮箱
+					   var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+					   if(myreg.test(newValue)){
+							 //验证是否被注册
+							 $.ajax({
+							 	url:'user/check.action',
+							 	async:false,
+							 	type:'get',
+							 	data:{value:newValue,type:'mail'},
+							 	success:function(res){
+									if(res.code == 200){
+										$scope.ok2 = false;
+										$scope.mesg2 = "";
+									}else{
+										$scope.ok2 = true;
+										$scope.mesg2 = "已被注册";
+									}
+							 }
+							 });
+					   }else{
+						   $scope.ok2 = true;
+						   $scope.mesg2 = "请输入正确的邮箱";
+					   }
+				});
+				var wacth = $scope.$watch('registerpassword',function(newValue){
+					if(!newValue) return ;//验证密码
+					 var reg = new RegExp("[\\u4E00-\\u9FFF]+","g");
+					 if(newValue.length>=8 && newValue.length<=14){
+						 if( reg.test(newValue) ){
+							 $scope.ok3 = true;
+							 $scope.mesg3 = "不能使用中文字符";
+						 }else{
+							  $scope.ok3 = false;
+							  $scope.mesg3 = "";
+						 }
+					 }else{
+						 $scope.ok3 = true;
+						 $scope.mesg3 = "长度8~14个字符";
+					 }
+				});
+				//发送邮件
+				$scope.sendmail = function(){
+					console.log($scope.registermail);
+					//获取输入的邮箱
+					if($scope.ok2) return;
+					//正则验证邮箱 发送ajax请求
+					$.post('code/getcode.action',{mail:$scope.registermail},function(res){
+						// console.log(res);
+						if(res.code = 200){
+							//验证码发送成功 设置倒计时 60s可再次点击 按钮
+						}else{
+							//发送失败
+							$scope.codebut = '发送失败';
+						}
+					});
+					$('#codebut').attr("disabled", true);
+					var a = 60;
+					var int = setInterval(function(){
+						var c = a--+'s';
+						$('#codebut').text(c);
+						console.log(1)
+						if(a<=0){
+							clearInterval(int);
+							$('#codebut').text("获取验证码");
+							$('#codebut').attr("disabled", false);
+						}
+					},1000)
+				}
+		
+		
+			});
+			  app.controller('updatepasswordctl', function($scope) {
+				  $scope.o1 = true;$scope.o2 = true;
+				  var wacth = $scope.$watch('updatemail',function(newValue){
+				  	if(!newValue) return ; //验证邮箱
+				  	   var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+				  	   if(myreg.test(newValue)){
+				  			 //验证是否被注册
+				  			 $.ajax({
+				  			 	url:'user/check.action',
+				  			 	async:false,
+				  			 	type:'get',
+				  			 	data:{value:newValue,type:'mail'},
+				  			 	success:function(res){
+				  					if(res.code == 200){
+										$scope.o1 = true;
+										$scope.m1 = "不存在该用户";
+				  					}else{
+				  						$scope.o1 = false;
+				  						$scope.m1 = "";
+				  					}
+				  			 }
+				  			 });
+				  	   }else{
+				  		   $scope.o1 = true;
+				  		   $scope.m1 = "请输入正确的邮箱";
+				  	   }
+				  });
+				  var wacth = $scope.$watch('updatepassword',function(newValue){
+				  	if(!newValue) return ;//验证密码
+				  	 var reg = new RegExp("[\\u4E00-\\u9FFF]+","g");
+				  	 if(newValue.length>=8 && newValue.length<=14){
+				  		 if( reg.test(newValue) ){
+				  			 $scope.o2 = true;
+				  			 $scope.m2 = "不能使用中文字符";
+				  		 }else{
+				  			  $scope.o2 = false;
+				  			  $scope.m2 = "";
+				  		 }
+				  	 }else{
+				  		 $scope.o2 = true;
+				  		 $scope.m2 = "长度8~14个字符";
+				  	 }
+				  });
+				//发送邮件
+				$scope.sendmail = function(){
+					console.log($scope.updatemail);
+					//获取输入的邮箱
+					if($scope.ok2) return;
+					//正则验证邮箱 发送ajax请求
+					$.post('code/getcode.action',{mail:$scope.updatemail},function(res){
+						// console.log(res);
+						if(res.code = 200){
+							//验证码发送成功 设置倒计时 60s可再次点击 按钮
+						}else{
+							//发送失败
+							$scope.codebut = '发送失败';
+						}
+					});
+					$('#updatacodebut').attr("disabled", true);
+					var a = 60;
+					var int = setInterval(function(){
+						var c = a--+'s';
+						$('#updatacodebut').text(c);
+						console.log(1)
+						if(a<=0){
+							clearInterval(int);
+							$('#updatacodebut').text("获取验证码");
+							$('#updatacodebut').attr("disabled", false);
+						}
+					},1000)
+				}
+			  });
+				 
+				 
+				 
+				//jq
+				//初始化轮播图
+			    $('#myCarousel').carousel({
+					interval: 4000,
+					pause:null
+				});
+				//忘记密码
+				function updatepsw(){
+					if(isnullinput($('#updatemail'))||isnullinput($('#updatepassword'))||isnullinput($('#updatecode'))) 
+					return false;
+					var usemail = $('#updatemail').val().trim();
+					var usepassword = $('#updatepassword').val().trim();
+					var code = $('#updatecode').val().trim();
+					var data  = {
+						usermail:usemail,
+						password:usepassword,
+						code:code
+					}
+					$('#updatepassword').val('');
+					$('#updatecode').val('');
+					$.post('user/updatepassword.action',data,function(res){
+						console.log(res)
+						if(res.code == 200){
+							alert('密码修改成功');
+						}else{
+							alert(res.mesg);
+						}
+					});
+					return false;
+				}
+				//用户登录 ajax
+				function login(){
+					if(isnullinput($('#code')) || isnullinput($('#password'))) return false;
+					var code = $('#code').val().trim();
+					var password = $('#password').val().trim();
+					$.post('user/login.action',{code:code,password:password},function(res){
+						console.log(res);
+						if(res.code == 200){
+							window.location.href = "./";
+						}else{
+							alert(res.mesg)
+						}
+					});
+					return false;
+				}
+				//用户注册
+				function register(){
+					if(!registercheck())  return false;
+					var username = $('#registerusername').val().trim();
+					var usemail = $('#registermail').val().trim();
+					var password = $('#registerpassword').val().trim();
+					var code = $('#registercode').val().trim();
+					var data = {
+						username:username,
+						usemail:usemail, 
+						password:password,
+						code:code
+					}
+					console.log("注册")
+					$.post('user/register.action',data,function(res){
+						console.log(res)
+						if(res.code == 200){
+							if(confirm("注册成功！是否直接登录到首页。。。")){
+								window.location.href = "./";
+							}
+						}else{
+							alert(res.mesg);
+						}
+						//清空form表单
+						$('#registerpassword').val('');
+						$('#registercode').val('');
+					})
+				}
+				//注册验证
+				function registercheck(){
+					var username = $('#registerusername').val().trim();
+					var usemail = $('#registermail').val().trim();
+					var password = $('#registerpassword').val().trim();
+					var code = $('#registercode').val().trim();
+					//非空判断
+					if(isnullinput($('#registerusername'))||isnullinput($('#registermail'))||isnullinput($('#registerpassword'))||isnullinput($('#registercode'))) 
+					return false;
+					return true; 
+					
+				}
+				//判断输入表单是否为空
+				function isnullinput(ele){
+					if(ele.val().trim()==''){
+						ele.parent().parent().addClass("has-error");
+						ele.focus();
+						//2s后消失
+						setTimeout(function(){
+							ele.parent().parent().removeClass("has-error");
+						},2000);
+						return true;
+					}
+					return false;
+				}
+		
+			  // 微博登录  "2.00YLImbGxezPoB1da2312613mJD7dB"
+			  WB2.anyWhere(function (W) {
+				W.widget.connectButton({
+					id: "wb_connect_btn",
+					type: '3,2',
+					callback: {
+						login: function (o) { //登录后的回调函数
+							alert("login: " + o.screen_name)
+						},
+						logout: function () { //退出后的回调函数
+							alert('logout');
+						}
+					}
+				});
+			});
+			 
+
+		</script>
+		
+	</body>
+</html>
