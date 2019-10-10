@@ -36,7 +36,7 @@ public class UploadListener implements ProgressListener {
                 Map<String, ConcurrentHashMap<String,Long>> uploadwork = (Map) this.session.getAttribute("uploadwork");
                 //存入进度中
                 ConcurrentHashMap<String,Long> rs = uploadwork.get(filesign);
-                if(rs!=null){   //会出现 rs为空情况
+                if(rs==null){   //会出现 rs为空情况
                    rs = new ConcurrentHashMap<>();
                 }
                 rs.put(ordernum,pBytesRead);
